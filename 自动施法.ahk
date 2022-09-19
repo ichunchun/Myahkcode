@@ -1,15 +1,19 @@
-﻿
+#SingleInstance, Force
+SendMode Input
+SetWorkingDir, %A_ScriptDir%
+CoordMode, Mouse, window
+CoordMode, Pixel, window
 #IfWinActive, ahk_class Diablo II
 
 $f1::
     {
-        ;1440x900分辨率用1400,860；1270x800用 1300,700
+        ;1440x900分辨率用734, 432；1270x800用 1300,700
         ;退出
         Send {esc}
-        MouseClick Left, 734, 432,1 
+        MouseClick Left, 637, 350,1 
         WaitForImage("C:\c.bmp")
         ;开始
-        MouseClick Left, 593, 483,1
+        MouseClick Left, 597, 487,1
         MouseClick Left, 665, 443,1 
     }
 Return
